@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html ng-app="login">
+<head>
+    <meta charset="utf-8" />
+    <title>GetUpSoft</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
+    <link href="//cdn.rawgit.com/cornflourblue/angular-registration-login-example/master/app-content/app.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="jumbotron">
+        <div class="container">
+            <div class="col-sm-8 col-sm-offset-2">
+                <div ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
+                <div ng-view></div>
+            </div>
+        </div>
+    </div>
+    <div class="credits text-center">
+        <p>
+            <a href="http://jasonwatmore.com/post/2015/03/10/angularjs-user-registration-and-login-example-tutorial" target="_top">AngularJS User Registration and Login Example & Tutorial</a>
+        </p>
+        <p>
+            <a href="http://jasonwatmore.com" target="_top">JasonWatmore.com</a>
+        </p>
+    </div>
+
+ 
+    
+    <script src="Router.js"></script>
+    <script src="services/auth_srv.js"></script>
+    <script src="services/flash_srv.js"></script>
+     <!-- Fake user service for demo that uses local storage -->
+    <script src="services/user_srv_localstrong.js"></script>
+
+    <!-- Real user service that uses an api -->
+    <!-- <script src="//cdn.rawgit.com/cornflourblue/angular-registration-login-example/master/app-services/user.service.js"></script> -->
+    <script src="Controller/home_crtl.js"></script>
+    <script src="Controller/login_crtl.js"></script>
+    <script src="Controller/register_crtl.js"></script>
+</body>
+</html>

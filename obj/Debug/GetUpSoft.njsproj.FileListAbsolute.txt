@@ -1,0 +1,3 @@
+C:\GetUpSoft\obj\Debug\GetUpSoft.njsprojAssemblyReference.cache
+C:\GetUpSoft\obj\Debug\GetUpSoft.njsproj.CoreCompileInputs.cache
+C:\GetUpSoft\bin\Microsoft.NodejsTools.WebRole.dll
